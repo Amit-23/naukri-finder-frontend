@@ -1,0 +1,10 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running lint..."
+pnpm lint || exit 1
+
+echo "Running typecheck..."
+pnpm exec tsc --noEmit || exit 1
+
+echo "✅ All checks passed"
