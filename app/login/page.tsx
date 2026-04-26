@@ -1,5 +1,10 @@
 import LoginForm from "../modules/register/RegistrationForm/LoginForm";
 
-export default function Login(){
-    return <LoginForm/>
+
+export default function LoginPage() {
+  return (
+    <div>
+      <LoginForm />
+    </div>
+  );
 }
